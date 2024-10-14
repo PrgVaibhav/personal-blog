@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-color: #121212;
+    --dark-gray: #1e1e1e;
+    --nav-color: #1f1f1f;
+
+    /* text color */
+    --light-gray: #E0E0E0;
+    --medium-gray: #A0A0A0;
+    --muted-gray: #757575;
+
+    /* font */
+    --font-sans: 'Ubuntu', sans-serif;
+    --font-serif: 'Satisfy', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--muted-gray);
+    border-radius: 5px;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--medium-gray);
+    font-family: var(--font-sans);
+    width: 100%;
+}
+
+header {
+    background: var(--nav-color);
+    color: var(--light-gray);
+}
+
+header .logo {
+    font-family: var(--font-serif);
+}
+
+.heading {
+    color: var(--light-gray);
+}
+
+.para {
+    color: var(--medium-gray);
+}
+
+.sub-para {
+    color: var(--muted-gray);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1E1E1E, #121212);
+}
+
+.card {
+    background: var(--dark-gray);
+    color: var(--light-gray);
+}
+
+.btn {
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, .6);
+    border: 1px solid var(--muted-gray);
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .6);
+    transform: scale(.99);
+}
+
+.btn:active {
+    transform: scale(.95);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, .6);
+}
